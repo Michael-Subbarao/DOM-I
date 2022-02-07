@@ -1,4 +1,5 @@
 const siteContent = { // DO NOT CHANGE THIS OBJECT
+
   "nav": {
     "nav-item-1": "Services",
     "nav-item-2": "Product",
@@ -40,3 +41,13 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+//images
+const logo = document.querySelector('#logo-img');
+const cta = document.querySelector('#cta-img');
+const middle = document.querySelector('#middle-img');
+logo.src = siteContent.images['logo-img'];
+cta.src = siteContent.images['cta-img'];
+middle.src = siteContent.images['accent-img'];
+
+
