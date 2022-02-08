@@ -50,4 +50,11 @@ logo.src = siteContent.images['logo-img'];
 cta.src = siteContent.images['cta-img'];
 middle.src = siteContent.images['accent-img'];
 
+//nav
+const navigation = document.querySelectorAll("header nav a");
+const navLinks = Array.from(navigation);
+const navText = Object.values(siteContent.nav);
+navLinks.forEach((item,index)=> {
+  item.textContent = navText[index];
+})
 
