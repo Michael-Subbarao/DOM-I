@@ -73,6 +73,8 @@ top.children[0].children[0].textContent = siteContent['main-content']['features-
 top.children[0].children[1].textContent = siteContent['main-content']['features-content'];
 top.children[1].children[0].textContent = siteContent['main-content']['about-h4'];
 top.children[1].children[1].textContent = siteContent['main-content']['about-content'];
+
+
 //bottom-middle
 bottom.children[0].children[0].textContent = siteContent['main-content']['services-h4'];
 bottom.children[0].children[1].textContent = siteContent['main-content']['services-content'];
@@ -82,13 +84,13 @@ bottom.children[2].children[0].textContent = siteContent['main-content']['vision
 bottom.children[2].children[1].textContent = siteContent['main-content']['vision-content'];
 
 //contact section
-const contact = document.querySelector['section.contact'];
+const contact = document.querySelector('.contact');
 contact.children[0].textContent = siteContent.contact['contact-h4'];
 contact.children[1].textContent = siteContent.contact['address'];
 contact.children[2].textContent = siteContent.contact['phone'];
 contact.children[3].textContent = siteContent.contact['email'];
 
 //footer
-const footer = document.querySelector['footer a'];
+const footer = document.querySelector('footer a');
 footer.textContent = siteContent.footer.copyright;
 footer.classList.add('bold');
